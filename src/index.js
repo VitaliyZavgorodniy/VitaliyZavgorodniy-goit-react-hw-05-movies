@@ -13,7 +13,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
 root.render(
-  <BrowserRouter  basename="/goit-react-hw-05-movies/">
+  <BrowserRouter basename="/goit-react-hw-05-movies/">
   {/* <BrowserRouter> */}
     <Provider store={store}>
       <ThemeProvider theme={theme}>

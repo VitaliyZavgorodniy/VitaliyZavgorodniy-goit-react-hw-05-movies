@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { fetchSearch } from 'services/fetchMoviesData';
 
@@ -40,16 +41,30 @@ const MoviePage = ({ genresList }) => {
       });
   };
 
-  if (loading) return <SkeletonHomePage />;
-
   return (
     <Section>
       <Container>
         <SearchForm onSearch={handleSearch} />
-        <MoviesGallery list={moviesList} />
       </Container>
+
+      {loading ? (
+        <SkeletonHomePage />
+      ) : (
+        <Container>
+          <MoviesGallery list={moviesList} />
+        </Container>
+      )}
     </Section>
   );
+};
+
+MoviePage.propTypes = {
+  genresList: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default MoviePage;

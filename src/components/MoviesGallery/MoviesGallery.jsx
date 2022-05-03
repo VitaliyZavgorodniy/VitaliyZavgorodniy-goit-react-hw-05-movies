@@ -12,7 +12,7 @@ const MoviesGallery = ({ list }) => {
       </Item>
     ));
 
-  return <Wrapper>{list.length > 0 ? renderGallery() : null}</Wrapper>;
+  return <Wrapper>{list.length ? renderGallery() : null}</Wrapper>;
 };
 
 const Wrapper = styled.ul`

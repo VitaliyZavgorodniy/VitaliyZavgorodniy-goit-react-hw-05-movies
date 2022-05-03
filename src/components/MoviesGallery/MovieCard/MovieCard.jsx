@@ -4,33 +4,31 @@ import styled from 'styled-components';
 import { breakpoints } from 'constants/breakpoints';
 
 const MovieCard = ({ id, title, posterPath, genres }) => (
-  <Link to={`/movies/${id}`}>
-    <Wrapper>
-      <Thumb>
-        <Picture>
-          <source
-            srcSet={`https://themoviedb.org/t/p/w342${posterPath}`}
-            media="(min-width: 768px)"
-          />
-          <source
-            srcSet={`https://themoviedb.org/t/p/w342${posterPath}`}
-            media="(min-width: 1024px)"
-          />
-          <img
-            alt={title}
-            loading="lazy"
-            src={`https://themoviedb.org/t/p/w342${posterPath}`}
-          />
-        </Picture>
-      </Thumb>
+  <Wrapper to={`/movies/${id}`}>
+    <Thumb>
+      <Picture>
+        <source
+          srcSet={`https://themoviedb.org/t/p/w342${posterPath}`}
+          media="(min-width: 768px)"
+        />
+        <source
+          srcSet={`https://themoviedb.org/t/p/w342${posterPath}`}
+          media="(min-width: 1024px)"
+        />
+        <img
+          alt={title}
+          loading="lazy"
+          src={`https://themoviedb.org/t/p/w342${posterPath}`}
+        />
+      </Picture>
+    </Thumb>
 
-      <Title>{title}</Title>
-      <Genres>{genres}</Genres>
-    </Wrapper>
-  </Link>
+    <Title>{title}</Title>
+    <Genres>{genres}</Genres>
+  </Wrapper>
 );
 
-const Wrapper = styled.div`
+const Wrapper = styled(Link)`
   width: 280px;
   transform: scale(1);
   transition: transform ${(p) => p.theme.transition};

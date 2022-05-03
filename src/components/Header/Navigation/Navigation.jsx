@@ -1,9 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+import sprite from 'assets/sprite.svg';
+
 const Navigation = () => (
   <Wrapper>
-    <Logo></Logo>
+    <Logo to="/">
+      <Icon>
+        <use href={`${sprite}#icon-film`} />
+      </Icon>
+      <Title>Filmoteka</Title>
+    </Logo>
     <Menu>
       <Item>
         <StyledLink
@@ -31,10 +38,22 @@ const Wrapper = styled.nav`
   align-items: center;
 `;
 
-const Logo = styled.div`
-  width: 40px;
-  height: 40px;
-  background-color: aqua;
+const Logo = styled(NavLink)`
+  display: flex;
+  align-items: flex-start;
+`;
+
+const Icon = styled.svg`
+  width: 24px;
+  height: 24px;
+`;
+
+const Title = styled.h1`
+  margin-left: 8px;
+  color: ${(p) => p.theme.accentColor};
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Comfortaa', sans-serif;
 `;
 
 const Menu = styled.ul`
