@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -12,7 +12,7 @@ const MovieCredits = ({ id }) => {
 
   useEffect(() => {
     fetchCredits('en', id).then((res) => setCredits(mappedCredits(res)));
-  });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const renderCredits = () =>
     credits.map((item) => (

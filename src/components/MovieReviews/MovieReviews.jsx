@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -14,7 +14,7 @@ const MovieReviews = ({ id }) => {
     fetchReviews('en', id).then((res) =>
       setReviews(mappedReviews(res.results))
     );
-  });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const renderReviews = () =>
     reviews.map((item) => (

@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
     fetchGenres().then((res) => setGenresList(res.list));
-  });
+  }, []);
 
   return (
     <Routes>
@@ -43,7 +43,7 @@ const App = () => {
           path="movies"
           element={
             <Suspense fallback={<SkeletonMoviesPages />}>
-              <MoviePage />
+              <MoviePage genresList={genresList} />
             </Suspense>
           }
         />

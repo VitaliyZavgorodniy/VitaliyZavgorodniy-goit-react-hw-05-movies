@@ -21,6 +21,7 @@ const StyledLink = styled(Link)`
 
   &.active,
   &:hover {
+    cursor: pointer;
     color: ${(p) => p.theme.accentColor};
     background-color: ${(p) => p.theme.lightBG};
   }

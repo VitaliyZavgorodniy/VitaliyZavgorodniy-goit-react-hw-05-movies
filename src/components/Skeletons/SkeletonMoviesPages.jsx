@@ -1,5 +1,6 @@
-const SkeletonMoviesPages = () => {
+
+const SkeletonMovieDetailsPage = () => {
   return <div>SkeletonMovieDetailsPage</div>;
 };
 
-export default SkeletonMoviesPages;
+export default SkeletonMovieDetailsPage;

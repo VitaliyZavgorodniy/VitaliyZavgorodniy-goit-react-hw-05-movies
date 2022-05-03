@@ -8,6 +8,7 @@ import Section from 'components/UI/Section';
 import MovieDetailsNavigation from 'components/MovieDetails/MovieDetailsNavigation';
 import MovieCredits from 'components/MovieCredits';
 import MovieReviews from 'components/MovieReviews';
+import Breadcumbers from 'components/Breadcumbers';
 
 import { formattedDetails } from 'utils/formattedDetails';
 import { fetchDetails } from 'services/fetchMoviesData';
@@ -23,14 +24,16 @@ const MovieDetailsPage = () => {
       setLoading(false);
       setMovieData(formattedDetails(res));
     });
-  });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // return <SkeletonMovieDetailsPage />;
   if (loading) return <SkeletonMovieDetailsPage />;
 
   return (
     <Section>
-      <Container>{movieData && <MovieDetails {...movieData} />}</Container>
+      <Container>
+        <Breadcumbers />
+        {movieData && <MovieDetails {...movieData} />}
+      </Container>
 
       <Container>
         <MovieDetailsNavigation id={movieID} />

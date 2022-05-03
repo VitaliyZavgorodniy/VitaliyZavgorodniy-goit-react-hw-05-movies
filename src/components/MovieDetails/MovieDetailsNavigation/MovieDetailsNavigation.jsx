@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import CustomLink from './CustonLink';
+import CustomLink from './CustomLink';
 
 const MovieDetailsNavigation = ({ id }) => {
   return (
