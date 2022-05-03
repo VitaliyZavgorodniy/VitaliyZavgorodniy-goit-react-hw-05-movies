@@ -20,7 +20,7 @@ const MovieDetailsPage = () => {
     fetchDetails('en', movieID).then((res) =>
       setMovieData(formattedDetails(res))
     );
-  }, []);
+  });
 
   return (
     <Section>
