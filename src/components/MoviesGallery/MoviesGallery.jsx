@@ -1,3 +1,4 @@
+import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { breakpoints } from 'constants/breakpoints';
@@ -5,10 +6,14 @@ import { breakpoints } from 'constants/breakpoints';
 import MovieCard from './MovieCard';
 
 const MoviesGallery = ({ list }) => {
+  const location = useLocation();
+
   const renderGallery = () =>
     list.map((item) => (
       <Item key={item.id}>
-        <MovieCard {...item} />
+        <Link to={`/movies/${item.id}`} state={{ from: location }}>
+          <MovieCard {...item} />
+        </Link>
       </Item>
     ));
 

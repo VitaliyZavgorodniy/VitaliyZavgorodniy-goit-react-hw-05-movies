@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { breakpoints } from 'constants/breakpoints';
 
-const MovieCard = ({ id, title, posterPath, genres }) => (
-  <Wrapper to={`/movies/${id}`}>
+const MovieCard = ({ title, posterPath, genres }) => (
+  <Wrapper>
     <Thumb>
       <Picture>
         <source
@@ -28,7 +27,7 @@ const MovieCard = ({ id, title, posterPath, genres }) => (
   </Wrapper>
 );
 
-const Wrapper = styled(Link)`
+const Wrapper = styled.div`
   width: 280px;
   transform: scale(1);
   transition: transform ${(p) => p.theme.transition};
