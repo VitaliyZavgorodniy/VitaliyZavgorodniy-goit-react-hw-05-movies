@@ -17,12 +17,13 @@ const MoviesGallery = ({ list }) => {
 
 const Wrapper = styled.ul`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-left: -20px;
 
   @media ${breakpoints.tablet} {
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-left: -32px;
   }
 

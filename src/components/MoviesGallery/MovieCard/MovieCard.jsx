@@ -48,18 +48,18 @@ const Wrapper = styled(Link)`
 `;
 
 const Thumb = styled.div`
-  height: 402px;
+  /* height: 402px; */
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
   background-color: ${(p) => p.theme.skeletonFrom};
 
   @media ${breakpoints.tablet} {
-    height: 455px;
+    /* height: 405px; */
   }
 
   @media ${breakpoints.desktop} {
-    height: 449px;
+    /* height: 449px; */
   }
 `;
 

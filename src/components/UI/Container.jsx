@@ -9,12 +9,12 @@ const Wrapper = styled.div`
   padding: 0 20px;
 
   @media ${breakpoints.tablet} {
-    width: 768px;
+    max-width: 768px;
     padding: 0 32px;
   }
 
   @media ${breakpoints.desktop} {
-    width: 1024px;
+    max-width: 1024px;
   }
 `;
 

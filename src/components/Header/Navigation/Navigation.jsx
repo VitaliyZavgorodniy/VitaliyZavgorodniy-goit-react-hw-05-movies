@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { breakpoints } from 'constants/breakpoints';
 
 import sprite from 'assets/sprite.svg';
 
@@ -49,11 +50,16 @@ const Icon = styled.svg`
 `;
 
 const Title = styled.h1`
+  display: none;
   margin-left: 8px;
   color: ${(p) => p.theme.accentColor};
   font-size: 24px;
   font-weight: 700;
   font-family: 'Comfortaa', sans-serif;
+
+  @media ${breakpoints.tablet} {
+    display: flex;
+  }
 `;
 
 const Menu = styled.ul`
