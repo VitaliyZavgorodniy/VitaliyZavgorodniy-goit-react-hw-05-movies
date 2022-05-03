@@ -10,4 +10,6 @@ export const theme = {
   headerHeight: '50px',
   footerHeight: '0px',
   mainFF: 'Comfortaa',
+  skeletonFrom: '#383838',
+  skeletonTo: '#222222',
 };

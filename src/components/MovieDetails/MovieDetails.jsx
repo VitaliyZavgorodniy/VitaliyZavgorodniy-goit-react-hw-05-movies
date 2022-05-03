@@ -57,6 +57,7 @@ const Wrapper = styled.div`
 const Thumb = styled.div`
   min-width: 240px;
   min-height: 357px;
+  background-color: ${(p) => p.theme.skeletonFrom};
 
   @media ${breakpoints.tablet} {
     min-width: 264px;

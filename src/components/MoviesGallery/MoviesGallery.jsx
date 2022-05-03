@@ -18,8 +18,6 @@ const MoviesGallery = ({ list }) => {
 const Wrapper = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
   margin-left: -20px;
 
   @media ${breakpoints.tablet} {

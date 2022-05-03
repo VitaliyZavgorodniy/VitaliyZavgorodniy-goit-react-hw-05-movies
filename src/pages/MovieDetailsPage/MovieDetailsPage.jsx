@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route, Outlet, useParams } from 'react-router-dom';
 
+import SkeletonMovieDetailsPage from 'components/Skeletons/SkeletonMovieDetailsPage';
 import MovieDetails from 'components/MovieDetails';
 import Container from 'components/UI/Container';
 import Section from 'components/UI/Section';
@@ -14,13 +15,18 @@ import { fetchDetails } from 'services/fetchMoviesData';
 const MovieDetailsPage = () => {
   const { movieID } = useParams();
 
+  const [loading, setLoading] = useState(true);
   const [movieData, setMovieData] = useState(null);
 
   useEffect(() => {
-    fetchDetails('en', movieID).then((res) =>
-      setMovieData(formattedDetails(res))
-    );
+    fetchDetails('en', movieID).then((res) => {
+      setLoading(false);
+      setMovieData(formattedDetails(res));
+    });
   });
+
+  // return <SkeletonMovieDetailsPage />;
+  if (loading) return <SkeletonMovieDetailsPage />;
 
   return (
     <Section>

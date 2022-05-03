@@ -54,6 +54,7 @@ const Thumb = styled.div`
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
+  background-color: ${(p) => p.theme.skeletonFrom};
 
   @media ${breakpoints.tablet} {
     height: 455px;
