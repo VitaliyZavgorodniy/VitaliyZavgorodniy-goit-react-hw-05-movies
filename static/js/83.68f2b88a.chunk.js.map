@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/83.68f2b88a.chunk.js","mappings":"gMAIA,EAJkB,WAChB,OAAO","sources":["pages/MoviePage/MoviePage.jsx"],"sourcesContent":["const MoviePage = () => {\n  return <div>HERE'is MOVIES SERCH</div>;\n};\n\nexport default MoviePage;\n"],"names":[],"sourceRoot":""}
