@@ -10,7 +10,6 @@ import Section from 'components/UI/Section';
 import { mappedMovies } from 'utils/mappedMoviesList';
 
 const HomePage = ({ genresList }) => {
-  const [page, setPage] = useState(1);
   const [moviesList, setMoviesList] = useState([]);
 
   useEffect(() => {

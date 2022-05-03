@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route, Outlet, useParams } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 import MovieDetails from 'components/MovieDetails';
 import Container from 'components/UI/Container';
@@ -12,12 +11,10 @@ import MovieReviews from 'components/MovieReviews';
 import { formattedDetails } from 'utils/formattedDetails';
 import { fetchDetails } from 'services/fetchMoviesData';
 
-const MovieDetailsPage = ({ genresList }) => {
+const MovieDetailsPage = () => {
   const { movieID } = useParams();
 
   const [movieData, setMovieData] = useState(null);
-  const [reviews, setReview] = useState(null);
-  const [credits, setCredits] = useState(null);
 
   useEffect(() => {
     fetchDetails('en', movieID).then((res) =>
@@ -41,15 +38,6 @@ const MovieDetailsPage = ({ genresList }) => {
       </Container>
     </Section>
   );
-};
-
-MovieDetailsPage.propTypes = {
-  genresList: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-    })
-  ),
 };
 
 export default MovieDetailsPage;

@@ -12,7 +12,7 @@ const MovieCredits = ({ id }) => {
 
   useEffect(() => {
     fetchCredits('en', id).then((res) => setCredits(mappedCredits(res)));
-  }, []);
+  });
 
   const renderCredits = () =>
     credits.map((item) => (

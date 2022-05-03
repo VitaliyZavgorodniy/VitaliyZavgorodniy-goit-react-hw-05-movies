@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { breakpoints } from 'constants/breakpoints';
 
 import CustomLink from './CustonLink';
 

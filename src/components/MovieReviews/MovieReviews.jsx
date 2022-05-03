@@ -14,7 +14,7 @@ const MovieReviews = ({ id }) => {
     fetchReviews('en', id).then((res) =>
       setReviews(mappedReviews(res.results))
     );
-  }, []);
+  });
 
   const renderReviews = () =>
     reviews.map((item) => (

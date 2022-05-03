@@ -32,7 +32,7 @@ const App = () => {
           path="movies/:movieID/*"
           element={
             <Suspense fallback={<div>loading</div>}>
-              <MovieDetailsPage genresList={genresList} />
+              <MovieDetailsPage />
             </Suspense>
           }
         />
@@ -40,7 +40,7 @@ const App = () => {
           path="movies"
           element={
             <Suspense fallback={<div>loading</div>}>
-              <MoviePage genresList={genresList} />
+              <MoviePage />
             </Suspense>
           }
         />
