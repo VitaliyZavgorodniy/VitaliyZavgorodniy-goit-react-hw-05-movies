@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-05-movies",
+  "name": "react-router-6-movies-db",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://VitaliyZavgorodniy.github.io/goit-react-hw-05-movies/",
+  "homepage": "https://VitaliyZavgorodniy.github.io/react-router-6-movies-db/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
