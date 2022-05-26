@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-05-movies/static/css/main.6466f09a.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.12432746.js",
-    "static/js/35.7d9ae32f.chunk.js": "/goit-react-hw-05-movies/static/js/35.7d9ae32f.chunk.js",
-    "static/js/77.ef60719c.chunk.js": "/goit-react-hw-05-movies/static/js/77.ef60719c.chunk.js",
-    "static/js/891.abdbb3b2.chunk.js": "/goit-react-hw-05-movies/static/js/891.abdbb3b2.chunk.js",
-    "index.html": "/goit-react-hw-05-movies/index.html",
-    "static/media/sprite.svg": "/goit-react-hw-05-movies/static/media/sprite.ad2136c6885f2b7c08fd5aec88adb4d7.svg",
-    "main.6466f09a.css.map": "/goit-react-hw-05-movies/static/css/main.6466f09a.css.map",
-    "main.12432746.js.map": "/goit-react-hw-05-movies/static/js/main.12432746.js.map",
-    "35.7d9ae32f.chunk.js.map": "/goit-react-hw-05-movies/static/js/35.7d9ae32f.chunk.js.map",
-    "77.ef60719c.chunk.js.map": "/goit-react-hw-05-movies/static/js/77.ef60719c.chunk.js.map",
-    "891.abdbb3b2.chunk.js.map": "/goit-react-hw-05-movies/static/js/891.abdbb3b2.chunk.js.map"
+    "main.css": "/react-router-6-movies-db/static/css/main.6466f09a.css",
+    "main.js": "/react-router-6-movies-db/static/js/main.e3e0d681.js",
+    "static/js/35.a892d898.chunk.js": "/react-router-6-movies-db/static/js/35.a892d898.chunk.js",
+    "static/js/77.ddc1097a.chunk.js": "/react-router-6-movies-db/static/js/77.ddc1097a.chunk.js",
+    "static/js/891.1b504a7f.chunk.js": "/react-router-6-movies-db/static/js/891.1b504a7f.chunk.js",
+    "index.html": "/react-router-6-movies-db/index.html",
+    "static/media/sprite.svg": "/react-router-6-movies-db/static/media/sprite.ad2136c6885f2b7c08fd5aec88adb4d7.svg",
+    "main.6466f09a.css.map": "/react-router-6-movies-db/static/css/main.6466f09a.css.map",
+    "main.e3e0d681.js.map": "/react-router-6-movies-db/static/js/main.e3e0d681.js.map",
+    "35.a892d898.chunk.js.map": "/react-router-6-movies-db/static/js/35.a892d898.chunk.js.map",
+    "77.ddc1097a.chunk.js.map": "/react-router-6-movies-db/static/js/77.ddc1097a.chunk.js.map",
+    "891.1b504a7f.chunk.js.map": "/react-router-6-movies-db/static/js/891.1b504a7f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6466f09a.css",
-    "static/js/main.12432746.js"
+    "static/js/main.e3e0d681.js"
   ]
 }
